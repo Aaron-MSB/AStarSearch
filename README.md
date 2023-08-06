@@ -1,7 +1,7 @@
-## AStarSearch
+# AStarSearch
 A* algorithm finds the shortest paths using cost and heuristic estimates.
 
-# Introduction
+## Introduction
 The A* search algorithm is a popular and widely used graph traversal and pathfinding algorithm in computer science and artificial intelligence. It is employed to find the shortest path between two nodes in a graph while considering the actual cost of moving between nodes and a heuristic estimate of the remaining cost to reach the goal.
 
 A* combines two key components: 
@@ -16,7 +16,7 @@ During its execution, A* gradually expands nodes, updating their G-Costs and H-C
 
 A* is widely used in various applications, including robotics, computer games, route planning, and artificial intelligence systems. Its efficiency and ability to find optimal paths make it a fundamental tool for solving problems involving pathfinding and graph traversal.
 
-# Problem Scenario                                    
+## Problem Scenario                                    
 On holiday, and a flight currently wants to travel to Bucharest from Arad. But there is no direct way to Bucharest from Arad. However, the cities are connected with each other like a graph. The distance between the connected cities is given. The flight wants to travel in the most optimal way. To find the optimal path to travel, another piece of information is provided: the straight line distance between any city and the final destination (Bucharest). 
 Now apply A* search to determine the most optimal value for the route Arad to Bucharest and help the flight. You have to use the straight line distance as the heuristic value for the cities.
 City	Heuristic value	City	Heuristic value
@@ -75,7 +75,7 @@ Total distance: 418 km
 
 If there is no path found from the Start node to the End node, simply print “NO PATH FOUND”
 
-# Input text
+### Input text
 Arad 366 Zerind 75 Timisoara 118 Sibiu 140
 Craiova 160 Dobreta 120 RimnicuVilcea 146 Pitesti 138
 Eforie 161 Hirsova 86
@@ -97,7 +97,7 @@ Vaslui 199 Urziceni 142 lasi 92
 Zerind 374 Oradea 71 Arad 75
 Bucharest 0 Fagaras 211 Pitesti 101 Giurgiu 90 Urziceni 85
 
-# Code explanation.
+## Code explanation.
 The code above implements the A* search algorithm to find the shortest path between nodes in a graph with associated costs and heuristic values. Here's a breakdown of the code:
 
 1. **`A_star_search` Function**: This function performs the A* search algorithm. It takes four arguments: the graph `g` (in the form of a dictionary of dictionaries representing the edges and their costs), the starting node `s`, the destination node `des`, and the heuristic values `heu_val` for each node. It returns a tuple containing the parent dictionary and the total cost of the path.
@@ -114,7 +114,7 @@ The code above implements the A* search algorithm to find the shortest path betw
 
 Please note that the given code relies on the input format in the "input.txt" file and certain assumptions about the structure of the graph. Additionally, the heuristic values provided play a key role in guiding the A* search algorithm toward the goal more efficiently.
 
-# Conclusion
+## Conclusion
 In conclusion, the A* search algorithm stands as a versatile and influential tool in the realm of computer science and artificial intelligence. With its ability to efficiently find the shortest path between nodes in a graph, A* strikes a balance between optimality and practicality by incorporating both actual costs and heuristic estimates. This enables it to navigate through complex graphs and deliver optimal solutions in various applications, such as route planning, robotics, and gaming.
 
 A* algorithm's success lies in its intelligent exploration strategy, which prioritizes nodes with the lowest estimated total cost. This strategy not only ensures optimality in terms of finding the shortest path but also significantly reduces the number of nodes explored compared to other uninformed search algorithms.
